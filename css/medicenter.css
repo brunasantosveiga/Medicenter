@@ -1,0 +1,400 @@
+* {
+    font-family: arial;
+}
+    body {
+    margin: 0px;
+    padding: 0px;
+}
+header {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    height: 120px;
+}
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 990px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+.menu {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+}
+nav ul, nav li {
+    list-style: none; /*lista sem os pontos*/
+    margin: 0px;
+    padding: 0px;
+}
+nav ul {
+    display: flex;
+}
+nav a {
+    padding: 15px;    
+    text-decoration: none;
+    text-transform: uppercase;/*tudo maiusculo*/
+    color: #727272;
+}
+nav .active a, 
+nav a:hover {
+    background-color: #39aae1;
+    color: #ffffff;
+}
+#banner {
+    background-image: url(../images/img1.jpg);
+    background-position: center;
+    background-size: cover; /*para a imagem de fundo ocupar todo espaço de onde ela foi aplicada, mesmo que precisa redimensionar e cortar a imagem*/
+    display: flex;
+    justify-content: center;
+}
+.column {
+    flex-direction: column;
+
+}
+.banner_headline {
+    flex: 1; /*Como o banner_options tem uma altura fixa, o flex:1 aqui faz com que o banner_headline use o restante da altura da div que eles estão, isso já nos ajuda na responsividade*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.banner_headline h1 {
+    color: #fff;
+    font-size: 70px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0px;
+    padding: 0px;
+    width: 350px;
+}
+.banner_headline h2 {
+    color: #fff;
+    font-size: 21px;
+    text-shadow: 0px 1px 0px #555;
+    margin: 0px;
+    padding: 0px;
+    width: 350px;
+    margin-top: 30px;
+}
+.banner_options {
+    height: 210px;
+    display: flex;
+    flex-direction: row;
+}
+.banner1,
+.banner2,
+.banner3 {
+    flex: 1; 
+    color: #fff;
+    padding: 20px;
+}
+.banner1 {
+    background-color: #39aae1;
+}
+.banner2 {
+    background-color: #0079c7;
+}
+.banner3 {
+    background-color: #2b4c99;
+}
+.banner_title {
+    font-size: 21px;
+}
+.banner_desc {
+    font-size: 12px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-weight: normal;
+}
+.banner_options a {
+    border: 1px solid #fff;
+    padding: 5px;
+    color: #fff;
+    font-size: 13px;
+    text-decoration: none;
+}
+.banner_title {
+    padding-bottom: 10px;
+}
+.banner3_day1,
+.banner3_day2,
+.banner3_day3 {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(106, 129, 172);
+    margin-bottom: 12px;
+    padding-bottom: 10px;
+    font-size: 12px;
+}
+#geral {
+    display: flex;
+    justify-content: center;
+}
+#geral section {
+    flex: 2;
+}
+#geral aside {
+    flex: 1;
+}
+.widget_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+.widget_title_text {
+    color: #000;
+    font-size: 21px;
+    font-weight: bold;
+}
+.widget_title_bar {
+    width: 50px;
+    height: 2px;
+    background-color: #36a9e1;
+}
+article {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 20px;
+}
+article a {
+    text-decoration: none;
+}
+.news_data {
+    display: flex;
+}
+.news_posted_at {
+    background-color: #2b4c99;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+    margin-right: 2px;
+}
+.news_comments {
+    background-color: #39aae1;
+    color: #fff;
+    font-size: 12px;
+    padding: 10px;
+}
+.news_thumbnail {
+    margin-top: 30px;
+}
+.news_thumbnail img {
+    width: 100%;
+    height: auto;
+}
+.news_title {
+    margin-top: 25px;
+    margin-bottom: 25px;
+    color: #000;
+    font-size: 23px;
+}
+.news_resume {
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+.departaments_div {
+    width: 150px;
+    height: 150px;
+    background-color: #39aae1;
+    color: #fff;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.link_departaments {
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.appointment_contact {
+    border-bottom: 1px solid rgb(218, 222, 230);
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    font-size: 12px;
+    color: #5c5c5c;
+    display: flex;
+}
+.appointment_resume {
+    color: #5c5c5c;
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(218, 222, 230);
+}
+.appointment_contactss {
+    display: flex;
+    flex-direction: column;
+} 
+.appointment_img_tel {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+.appointment_img_email {
+    width: 20px;
+    height: 15px;
+    margin-right: 10px;
+}
+.appointment_img_anotaçao {
+    width: 18px;
+    height: 21px;
+    margin-right: 10px;
+    margin-left: 2px;
+}
+footer {
+    background-color: #1e1e1e;
+    display: flex;
+    justify-content: center;
+}
+.footer_menu {
+    display: flex;
+    flex: 1;
+}
+.footer_menu a {
+    display: block;
+    text-decoration: none;    
+    padding: 20px;
+    color: #fff;
+}
+.fm_1,
+.fm_2,
+.fm_3 {
+    flex: 1;
+    color: #fff;
+}
+.fm_1 {
+    background-color: #39aae1;
+}
+.fm_2 {
+    background-color: #0079c7;
+}
+.fm_3 {
+    background-color: #2b4c99;
+}
+.fm_title {
+    color: #fff;
+    font-size: 25px;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+.fm_text {
+    font-size: 14px;
+}
+.footer_area {
+    display: flex;
+}
+.flexcolumn {
+    display: flex;
+    flex-direction: column;
+}
+.footer_area_item {
+    flex: 1;
+    color: #727272;
+    font-size: 12px;
+    margin-top: 30px;
+    margin-right: 10px;
+    line-height: 20px;
+}
+.fa1_div {
+    display: flex;
+    justify-content: space-between;
+}
+.lasted_posts {
+    color: #fff;
+}
+footer .widget_title_text {
+    color: #fff;
+}
+.text_blue {
+    color: #0079c7; 
+    margin-top: 0px;
+}
+.footer_copy {
+    border-top: 1px solid #2c2c2c;
+    height: 40px;
+    line-height: 40px; /*(Espaçamento entre linhas) Como só tem uma linha com 40px, definindo o espaçamento entre linhas como 40px, o texto ficará no meio da linha*/
+    color: #5c5c5c;
+    font-size: 12px;
+    margin-top: 30px;
+}
+p {
+    margin-bottom: 0px;
+}
+.menumobile {
+    display: none;
+    width: 40px;
+    height: 40px;
+    margin-top: 40px;
+    margin-bottom: 40px; /*Como height é 40 px, coloquei margin top e bottom de 40 px para no total dar 120 px de cabeçalho, como foi definido no header*/
+    margin-right: 20px;
+}
+.mm_line {
+    height: 2px;
+    background-color: #39aae1;
+}
+@media (max-width:600px) {
+
+    .banner_headline h1 {
+        font-size: 55px;
+    }
+    .banner_headline h2 {
+        font-size: 17px;
+    }
+    .banner_headline {
+        padding: 20px;
+    }
+    .banner_options {
+        height: auto;        
+        flex-direction: column;
+    }
+    .container {
+        flex-direction: column;
+    }
+    #geral section, #geral
+    aside, .footer_copy {
+        padding: 20px;
+    }
+    .footer_menu {
+        flex-direction: column;
+    }
+    .footer_area {
+        flex-direction: column;
+        padding: 20px;
+    }
+    header .container {
+        flex-direction: row;
+    }
+    nav ul {
+        flex-direction: column;
+        display: none;
+        position: absolute; 
+        left: 0px;
+        width: 100%;
+        background-color: #fff;
+    }
+    nav li {
+        padding: 10px;
+    }
+    header {
+        height: auto;
+    }
+    .logo {
+        padding-left: 20px;
+    }
+    .menumobile {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+}
