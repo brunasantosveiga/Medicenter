@@ -5,17 +5,6 @@
     <meta name="viewport" content="width=device-width, user-scalable=0">
     <title>Medicenter</title>
     <link rel="stylesheet" type="text/css" href="css/medicenter.css"/>
-    <script type="text/javascript">
-    window.onload = function (){
-        document.querySelector(".menumobile").addEventListener("click", function(){
-            if(document.querySelector(".menu nav ul").style.display == 'flex') {
-                document.querySelector(".menu nav ul").style.display = 'none';
-            } else {
-                document.querySelector(".menu nav ul").style.display = 'flex';
-            }
-        });
-    };
-    </script>
 </head>
 <body>
 <header> <!--As propriedades de flexbox que eu colocar no header serão aplicadas ao elemento filho (div), por isso a div interna-->
@@ -311,5 +300,6 @@ VIC 3033, Australia
         </div>
     </div>
 </footer>
+<script src="script.js"></script>
 </body>
 </html>
